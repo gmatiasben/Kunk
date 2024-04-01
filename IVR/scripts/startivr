@@ -1,0 +1,12 @@
+#!/bin/bash
+
+PROGRAM="/usr/local/bin/startivr"
+
+echo "`date` -> Iniciando ${PROGRAM}" >> /tmp/log-ivrsrv
+while true
+do
+	echo "`date` -> Restart " >> /tmp/log-ivr-srv
+	cd /ivr
+	./saludcli
+	echo "`date` -> Detenido " >> /tmp/log-ivr-srv
+done

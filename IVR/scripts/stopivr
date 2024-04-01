@@ -1,0 +1,15 @@
+#!/bin/bash
+
+PROGRAM="/usr/local/bin/stopivr"
+
+echo "`date +%d/%m/%y-%k:%M:%S` -> stopivr ${PROGRAM}" >> /tmp/log-ivrsrv
+
+# PID de startivr
+PID=`ps ax | grep /usr/local/bin/startivr | awk '{print$1}'`
+if [ $PID ] ; then
+	kill -9 $PID
+	killall saludcli
+	echo "`date +%d/%m/%y-%k:%M:%S` -> $PID startivr Detenido" >> /tmp/log-ivrsrv
+else
+	echo "`date +%d/%m/%y-%k:%M:%S` -> startivr Not Running" >> /tmp/log-ivrsrv
+fi

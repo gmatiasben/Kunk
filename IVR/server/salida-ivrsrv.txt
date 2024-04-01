@@ -1,0 +1,140 @@
+INICIA IVRSRV: 01/10 - 17:17:08
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|1|30133258||0123456|||||888|20278427200 (48 bytes)
+msg: &0100|00|1|30133258||0123456|||||888|20278427200 48 (k=48)
+Processing code desconocidoSendMsg: (48 bytes) (wr=48)
++ + +
+INICIA IVRSRV: 01/10 - 17:49:54
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|2|30133258||0123456|||||888|20278427200 (48 bytes)
+msg: &0100|00|2|30133258||0123456|||||888|20278427200 48 (k=48)
+Processing code desconocidoSendMsg: (48 bytes) (wr=48)
++ + +
+INICIA IVRSRV: 01/10 - 17:55:55
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|3|30133258||0123456|||||888|20278427200 (48 bytes)
+msg: &0100|00|3|30133258||0123456|||||888|20278427200 48 (k=48)
+Processing code desconocidoSendMsg: (48 bytes) (wr=48)
++ + +
+INICIA IVRSRV: 01/10 - 18:01:34
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|4|30133258||0123456|||||888|20278427200 (48 bytes)
+msg: &0100|00|4|30133258||0123456|||||888|20278427200 48 (k=48)
+AutorizacionSendMsg: (48 bytes) (wr=48)
++ + +
+INICIA IVRSRV: 01/10 - 18:14:50
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|5|30133258||0123456|||||888|20278427200 (48 bytes)
+msg in: &0100|00|5|30133258||0123456|||||888|20278427200 48 (k=48)
+AutorizacionSendMsg: (48 bytes) (wr=48)
+msg out:  0 (k=48)
++ + +
+INICIA IVRSRV: 01/10 - 18:20:09
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|6|30133258||0123456|||||888|20278427200 (48 bytes)
+msg in: &0100|00|6|30133258||0123456|||||888|20278427200 48 (k=48)
+AutorizacionSendMsg:&182116|1001|1234|00 (48 bytes) (wr=48)
+msg out: &182116|1001|1234|00 20 (k=48)
++ + +
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|7|5045210000232401006||420101|||||888|27225434811 (58 bytes)
+msg in: &0100|00|7|5045210000232401006||420101|||||888|27225434811 58 (k=58)
+AutorizacionSendMsg:&182322|1001|1234|00 (58 bytes) (wr=58)
+msg out: &182322|1001|1234|00 20 (k=58)
++ + +
+INICIA IVRSRV: 01/10 - 18:29:20
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|8|30133258||0123456|||||888|20278427200% (49 bytes)
+msg in: &0100|00|8|30133258||0123456|||||888|20278427200% 49 (k=49)
+AutorizacionSendMsg:&183711|1001|1234|00||% (49 bytes) (wr=49)
+msg out: &183711|1001|1234|00||% 23 (k=49)
++ + +
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|9|30133258||0123456|||||888|20278427200% (49 bytes)
+msg in: &0100|00|9|30133258||0123456|||||888|20278427200% 49 (k=49)
+AutorizacionSendMsg:&184849|1001|1234|00||% (49 bytes) (wr=49)
+msg out: &184849|1001|1234|00||% 23 (k=49)
++ + +
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|10|30133258||1234555|||||888|20278427200% (50 bytes)
+msg in: &0100|00|10|30133258||1234555|||||888|20278427200% 50 (k=50)
+AutorizacionSendMsg:&185111|1001|1234|00||% (50 bytes) (wr=50)
+msg out: &185111|1001|1234|00||% 23 (k=50)
++ + +
+INICIA IVRSRV: 02/10 - 09:39:51
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|11|30133258||4445598||4567890|||888|20278427200% (57 bytes)
+msg in: &0100|00|11|30133258||4445598||4567890|||888|20278427200% 57 (k=57)
+AutorizacionSendMsg:&094135|1002|1234|00||% (57 bytes) (wr=57)
+msg out: &094135|1002|1234|00||% 23 (k=57)
++ + +
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|02|1234||||||||888|20278427200% (37 bytes)
+msg in: &0100|02|1234||||||||888|20278427200% 37 (k=37)
+AnulacionSendMsg:&101759|1002||00||% (37 bytes) (wr=37)
+msg out: &101759|1002||00||% 19 (k=37)
++ + +
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|02|1221||||||||888|20278427200% (37 bytes)
+msg in: &0100|02|1221||||||||888|20278427200% 37 (k=37)
+AnulacionSendMsg:&101844|1002||00||% (37 bytes) (wr=37)
+msg out: &101844|1002||00||% 19 (k=37)
++ + +
+INICIA IVRSRV: 02/10 - 10:33:17
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|02|1234||||||||888|20278427200% (37 bytes)
+msg in: &0100|02|1234||||||||888|20278427200% 37 (k=37)
+AnulacionSendMsg:&103341|1002||00||% (37 bytes) (wr=37)
+msg out: &103341|1002||00||% 19 (k=37)
++ + +
+INICIA IVRSRV: 02/10 - 10:40:37
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|02|5525||||||||888|20278427200% (37 bytes)
+msg in: &0100|02|5525||||||||888|20278427200% 37 (k=37)
+Código de anulación inválido5525|SendMsg:&104105|1002||05||% (37 bytes) (wr=37)
+msg out: &104105|1002||05||% 19 (k=37)
++ + +
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|02|1234||||||||888|20278427200% (37 bytes)
+msg in: &0100|02|1234||||||||888|20278427200% 37 (k=37)
+Código de anulación inválido1234|SendMsg:&104157|1002||05||% (37 bytes) (wr=37)
+msg out: &104157|1002||05||% 19 (k=37)
++ + +
+INICIA IVRSRV: 02/10 - 10:56:43
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|02|1234||||||||888|20278427200% (37 bytes)
+msg in: &0100|02|1234||||||||888|20278427200% 37 (k=37)
+Código de anulación inválido1234|SendMsg:&105707|1002||03||% (37 bytes) (wr=37)
+msg out: &105707|1002||03||% 19 (k=37)
++ + +
+INICIA IVRSRV: 02/10 - 10:59:40
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|02|1234||||||||888|20278427200% (37 bytes)
+msg in: &0100|02|1234||||||||888|20278427200% 37 (k=37)
+AnulacionSendMsg:&110005|1002||00||% (37 bytes) (wr=37)
+msg out: &110005|1002||00||% 19 (k=37)
++ + +
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|02|1221||||||||888|20278427200% (37 bytes)
+msg in: &0100|02|1221||||||||888|20278427200% 37 (k=37)
+Código de anulación inválido1221SendMsg:&110032|1002||03||% (37 bytes) (wr=37)
+msg out: &110032|1002||03||% 19 (k=37)
++ + +
+INICIA IVRSRV: 02/10 - 11:02:07
+Esperando Conexion de IVR Remotos en Puerto 4158...
+-------- CONEXION ACEPTADA DESDE....192.168.1.30 Socket:5
+GetMsg:&0100|00|12|5045210000232401006||420101|||||888|27225434811% (60 bytes)
+msg in: &0100|00|12|5045210000232401006||420101|||||888|27225434811% 60 (k=60)
+No se encontró código de autorización !!!

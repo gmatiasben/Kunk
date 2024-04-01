@@ -1,0 +1,10 @@
+-. MAC .-
+Autor: Matias Bendel
+Fecha: Julio 2007
+Descripción: Aplicación que lee y escribe el puerto serie en forma asíncrona 
+  (protocolo RS-232), a fin de procesar una transacción entre un terminal 
+  ingenico(c) y un modem externo US Robotics 56k(c).
+
+  Modo de uso:   mac com:<#>
+  Ej.:           mac com:1
+

@@ -1,0 +1,56 @@
+#!/bin/bash
+# LIST OF REQUESTS AND RESPONSES
+LREQ=`ls | grep $1- | grep msgreq`
+LRESP=`ls | grep $1- | grep msgresp`
+# NUMBER OF REQUESTS AND RESPONSES
+NREQ="`ls | grep $1- | grep msgreq | wc -l`"
+NRESP="`ls | grep $1- | grep msgresp | wc -l`"
+if [ $NRESP -ne $NREQ ]; then
+    echo "Request y Response no coinciden. Verificar consistencia."
+    exit 1
+fi
+echo -e "\n********************************************" 
+echo -e "*   ESTADISTICA DE TRANSACCIONES Mes: $1   *"
+echo -e "********************************************" 
+n=$NRESP
+NAUT=0
+NAUTOK=0
+NAUTREJ=0
+NANU=0
+NANUOK=0
+NANUREJ=0
+UNKNOWN=0
+for (( i = 1 ; i <= n; i++ ))
+do
+    # TYPE OF REQUEST
+    TREQ=`cat $LREQ | head -$i | tail -1 | awk -F"|" '{printf$2}'`
+    # STATUS OF RESPONSE
+    SRESP=`cat $LRESP | head -$i | tail -1 | awk -F"|" '{printf$4}'`
+    # for debug: cat $SF | head -$i | tail -1
+    if [ $TREQ -eq "00" ]; then
+	NAUT=`expr $NAUT + 1`
+        if [ $SRESP -eq "00" ]; then
+	    NAUTOK=`expr $NAUTOK + 1`
+	else
+	    NAUTREJ=`expr $NAUTREJ + 1`
+	fi
+    else
+	if [ $TREQ -eq "02" ]; then
+	    NANU=`expr $NANU + 1`
+	    if [ $SRESP -eq "00" ]; then
+		NANUOK=`expr $NANUOK + 1`
+	    else
+		NANUREJ=`expr $NANUREJ + 1`
+	    fi
+	else
+	    UNKNOWN=`expr $UNKNOWN + 1`
+	fi
+    fi
+done
+echo -e "Total transacciones recibidas:\t   $NREQ"
+echo -e "  \_ Autorizaciones:\t\t\t$NAUT"
+echo -e "        \_ OK:\t\t\t\t $NAUTOK"
+echo -e "        \_ ERROR:\t\t\t $NAUTREJ"
+echo -e "  \_ Anulaciones:\t\t\t $NANU"
+echo -e "        \_ OK:\t\t\t\t $NANUOK"
+echo -e "        \_ ERROR:\t\t\t $NANUREJ\n"
